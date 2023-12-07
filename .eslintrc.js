@@ -8,6 +8,8 @@ module.exports = {
     'react/prop-types': 0,
     'react/self-closing-comp': 0,
     'react/display-name': 0,
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-uses-react': 'off',
 
     // JavaScript
     semi: 0,
