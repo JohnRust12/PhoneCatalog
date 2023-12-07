@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "./static/css/main.11f8eb4b.chunk.css",
+    "main.js": "./static/js/main.817161e9.chunk.js",
+    "main.js.map": "./static/js/main.817161e9.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.8c9895b1.js",
+    "runtime-main.js.map": "./static/js/runtime-main.8c9895b1.js.map",
+    "static/js/2.260ce846.chunk.js": "./static/js/2.260ce846.chunk.js",
+    "static/js/2.260ce846.chunk.js.map": "./static/js/2.260ce846.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.11f8eb4b.chunk.css.map": "./static/css/main.11f8eb4b.chunk.css.map",
+    "static/js/2.260ce846.chunk.js.LICENSE.txt": "./static/js/2.260ce846.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "./static/media/Mont-SemiBold.8979d71a.otf",
+    "static/media/arrowDown.6559e133.svg": "./static/media/arrowDown.6559e133.svg",
+    "static/media/arrowLeft.d51ddc97.svg": "./static/media/arrowLeft.d51ddc97.svg",
+    "static/media/breadcrumbs.scss": "./static/media/home.d4c29e4f.svg",
+    "static/media/arrowRigth.2a072ff1.svg": "./static/media/arrowRigth.2a072ff1.svg",
+    "static/media/arrowUp.df6c57d0.svg": "./static/media/arrowUp.df6c57d0.svg",
+    "static/media/cart.1962e424.svg": "./static/media/cart.1962e424.svg",
+    "static/media/search.scss": "./static/media/search.eb670dd9.svg",
+    "static/media/fresh-apple-icon.a07e4c31.svg": "./static/media/fresh-apple-icon.a07e4c31.svg",
+    "static/media/heartRed.d554a185.svg": "./static/media/heartRed.d554a185.svg",
+    "static/media/heartTransparent.dbd19c03.svg": "./static/media/heartTransparent.dbd19c03.svg",
+    "static/media/minus.d4055954.svg": "./static/media/minus.d4055954.svg",
+    "static/media/plus.5a5c9983.svg": "./static/media/plus.5a5c9983.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8c9895b1.js",
+    "static/js/2.260ce846.chunk.js",
+    "static/css/main.11f8eb4b.chunk.css",
+    "static/js/main.817161e9.chunk.js"
+  ]
+}
