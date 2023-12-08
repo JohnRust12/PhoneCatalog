@@ -10,6 +10,8 @@ module.exports = {
     'react/display-name': 0,
     'react/react-in-jsx-scope': 'off',
     'react/jsx-uses-react': 'off',
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': 'warn',
 
     // JavaScript
     semi: 0,
