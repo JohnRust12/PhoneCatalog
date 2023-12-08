@@ -18,4 +18,4 @@ BEM methodology is used for naming and styling.
 
 Developed using [Figma design](https://www.figma.com/file/uEetgWenSRxk9jgiym6Yzp/Phone-catalog-redesign?node-id=1%3A2).
 
-[Demo link](https://github.com/JohnRust12/PhoneCatalog).
+[Demo link](https://JohnRust12.github.io/PhoneCatalog/).
