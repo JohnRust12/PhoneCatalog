@@ -1,9 +1,12 @@
 import { FC } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { Product } from '../../types/Product';
 import { Breadcrumbs } from '../Breadcrumbs';
 import { ProductItem } from '../ProductItem';
 import { Droplist } from '../Droplist/Droplist';
 import './results-search.scss';
+import { sortProducts } from '../../helpers/sortProducts';
+import { Pagination } from '../Pagination';
 
 const optionsSort = ['newest', 'alphabetically', 'price'];
 const optionsItemsPage = ['4', '8', '16', 'all'];
@@ -14,6 +17,20 @@ type Props = {
 
 export const ResultsSearch: FC<Props> = ({ products }) => {
   const countProducts = products.length;
+  const [searchParams] = useSearchParams();
+  const currentPage = Number(searchParams.get('page')) || 1;
+  const sortedBy = searchParams.get('sortBy') || '';
+  const perPage = Number(searchParams.get('perPage')) || countProducts;
+  const lastPage = Math.ceil(countProducts / perPage);
+  const isPaginationShow = perPage !== countProducts && lastPage > 1;
+
+  const start = currentPage * perPage - perPage;
+  const end = currentPage * perPage <= countProducts
+    ? currentPage * perPage
+    : countProducts;
+
+  const sortedProducts = sortProducts(products, sortedBy);
+  const visibleProducts = sortedProducts.slice(start, end);
 
   return (
     <div className="results-search">
@@ -39,7 +56,7 @@ export const ResultsSearch: FC<Props> = ({ products }) => {
         </div>
         {countProducts !== 0 ? (
           <div className="results-search__found grid">
-            {products.map((product) => (
+            {visibleProducts.map((product: Product) => (
               <ProductItem key={product.id} product={product} />
             ))}
           </div>
@@ -48,6 +65,15 @@ export const ResultsSearch: FC<Props> = ({ products }) => {
             Nothing was found for your request
           </p>
         )}
+        <div className="product-list__pagination">
+          {isPaginationShow && (
+            <Pagination
+              total={countProducts}
+              perPage={perPage}
+              currentPage={currentPage}
+            />
+          )}
+        </div>
       </div>
     </div>
   );
