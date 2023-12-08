@@ -1,6 +1,10 @@
 @import "../../styles/utils";
 
 .results-search {
+  &__content {
+    margin-bottom: 40px;
+  }
+
   &__count {
     margin: 24px 0;
   }
@@ -9,5 +13,12 @@
     @extend %h2;
     color: $c-secondary;
     margin-bottom: 40px;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    margin-top: 40px;
   }
 }

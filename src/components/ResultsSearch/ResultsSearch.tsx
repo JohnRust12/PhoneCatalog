@@ -55,7 +55,7 @@ export const ResultsSearch: FC<Props> = ({ products }) => {
           />
         </div>
         {countProducts !== 0 ? (
-          <div className="results-search__found grid">
+          <div className="results-search__content grid">
             {visibleProducts.map((product: Product) => (
               <ProductItem key={product.id} product={product} />
             ))}
@@ -65,7 +65,7 @@ export const ResultsSearch: FC<Props> = ({ products }) => {
             Nothing was found for your request
           </p>
         )}
-        <div className="product-list__pagination">
+        <div className="results-search__pagination">
           {isPaginationShow && (
             <Pagination
               total={countProducts}
